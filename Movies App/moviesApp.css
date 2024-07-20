@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #D9AFD9;
+    background-image: linear-gradient(19deg, #D9AFD9 0%, #97D9E1 100%);
+    position: fixed;
+    z-index: 22;
+    width: 100%;
+    height: 70px;
+    padding: 10px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    font-size: 30px ;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+header div{
+    padding: 10px;
+}
+
+header div input {
+    padding: 5px;
+    text-align: center;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-size: 25px;
+    border: none;
+
+}
+
+header div input::placeholder{
+    color: rgba(0, 0, 0, 0.849);
+}
+
+header div input:focus{
+    outline: none;
+}
+
+header div i {
+    font-size: 30px;
+    opacity: 0.7;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    margin-left: 15px;
+}
+
+header div i:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+section{
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 1%, #ffffff 100%);    
+}
+
+.container{
+    padding: 150px 100px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,auto);
+    gap: 50px 30px;
+}
+
+.movia-info img{
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+}
+
+.movia-info .information{
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.information .head{
+    display: inline-block;
+}
+
+.information h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.information span,
+.information .head{
+    width: fit-content;
+    text-align: center;
+    background-color: #00000080;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.movia-info{
+    position: relative;
+    width: 350px;
+    background: #00000077;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.story{
+    position: absolute;
+    max-height: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    display: none;
+    max-height: 100%;
+    width: 100%;
+    background-color: white;
+    transition: 0.5s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    overflow: auto;
+    -webkit-transform: translateY(101%);
+    -moz-transform: translateY(101%);
+    -ms-transform: translateY(101%);
+    -o-transform: translateY(101%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.movia-info:hover .story{
+    top: 0;
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    display: block;    
+
+}
+
+.story h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+
+.story p{
+    margin: 0;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.page-num{
+    text-align: center;
+}
+
+.page-num span{
+    display: inline-block;
+    width: fit-content;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.568);
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.page-num span:hover{
+    background-color: black;
+}
+

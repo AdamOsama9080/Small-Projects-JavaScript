@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="filterPrice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    <title>filterPrice.css</title>
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <div class="intro">
+                <h1>price Range</h1>
+                <p>use slider or enter min or max price</p>
+            </div>
+
+            <div class="input-field">
+                <div class="field">
+                    <span>min</span>
+                    <input class="min-enter" type="number" placeholder="min-price" value="2500">
+                </div>
+                <div class="seprator">-</div>
+                <div class="field">
+                    <span>max</span>
+                    <input class="max-enter" type="number" placeholder="max-price" value="7500">
+                </div>
+            </div>
+            <div class="slider">
+                <div class="progress"></div>
+            </div>
+            <div class="range-input">
+                <input type="range" class="range-min" min="0" max="10000" value="2500" >
+                <input type="range" class="range-max" min="0" max="10000" value="7500" >
+            </div>
+            <!-- <div class="range">
+                <input class="min-max" type="range" >
+            </div> -->
+        </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/07846b5032.js" crossorigin="anonymous"></script>
+    <script src="filterPrice.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #4CA1AF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Ms Madi', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    text-align: center;
+    width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 15px;
+    color: #f1f5f9;
+}
+
+.Qr h1{
+    margin: 15px;
+}
+
+input{
+    padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
+    width: 200px;
+    border: 1px solid #ccc;
+
+}
+
+input::placeholder{
+    color: #ccc;
+}
+
+input:focus{
+    width: 250px;
+    outline: none;
+}
+
+input:focus::placeholder{
+    opacity: 0;
+}
+
+.genrate-btn{
+    margin: 10px 0 ;
+}
+
+.genrate-btn span{
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 15px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #4ca1af94;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    border-color: none;
+    user-select: none;
+}
+
+.genrate-btn span:hover{
+    background-color:  #4ca1af;
+}
+
+.img{
+    display: none;
+}
+
+.img::after{
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background: transparent;
+    border: 5px solid rgba(0, 0, 0, 0.501);
+    right: 120px;
+    bottom: -15px;
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+.img::before{   
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background: transparent;
+    border: 5px solid rgba(0, 0, 0, 0.501);
+    left: 120px;
+    top: -15px;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+.active{
+    display: block;
+    position: relative;
+    margin: 30px 0px;
+
+}
+

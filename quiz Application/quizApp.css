@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quizApp{
+    width: 800px;
+    background: #eee;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.quizApp h2{
+    text-align: center;
+    padding: 15px;
+    font-size: 35px;
+    background-color: #8080805c;
+    font-weight: bold;
+    user-select: none;
+}
+
+.quizApp ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.quizApp ul li {
+    margin-top: 20px;
+}
+
+.quizApp span
+,span{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid;
+    padding: 15px;
+    background-color: #03a9f4;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    user-select: none;
+}
+
+.quizApp span:hover,
+span:hover{
+    background-color: #2196f3;
+}
+
+.quizApp ul li input{
+    width: 20px;
+    height: 19px;
+}
+
+.quizApp ul li label{
+    margin-left: 30px;
+    user-select: none;
+}
+
+input ,label{
+    cursor: pointer;
+}
+
+.result{
+    width: 500px;
+    height: 150px;
+    background-color: white;
+    border-radius: 20px;
+    display: none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.hello{
+    display: block;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.hello p{
+    color: #03a9f4;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: -35%;
+    left: 50%;
+    transform: -50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+.result span{
+    position: relative;
+    bottom: -80px;
+}

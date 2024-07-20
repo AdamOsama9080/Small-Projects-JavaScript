@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: #485563;  /* fallback for old browsers*/
+    background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6*/
+    background: linear-gradient(to right, #29323c, #485563); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.container{
+    width: 500px;
+    background-color: #3333337d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 36px;
+    border-radius: 15px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: white;
+    opacity: 0.9;
+}
+
+.weat input {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #00000078;
+    opacity: 0.7;
+    width: 350px;
+    height: 50px;
+    border: none;
+}
+
+.weat i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.weat i:hover{
+    cursor: pointer;
+}
+
+.weat input:focus{
+    outline: none;
+    border: 2px solid white;
+}
+
+.location{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.celisus{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.info p{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.today i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
